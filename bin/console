@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+use Exeal\PhpSkeleton\Hello;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$hello = new Hello();
+fprintf(STDOUT, $hello->salute($argv[1]) . "\n");
